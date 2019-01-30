@@ -1,0 +1,31 @@
+{
+  "name": "leaflet-multispectral",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/leaflet-multispectral.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/publiclab/leaflet-multispectral.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Public Lab"
+  },
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/publiclab/leaflet-multispectral/issues"
+  },
+  "homepage": "https://github.com/publiclab/leaflet-multispectral#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "leaflet": "^1.3.1",
+    "image-sequencer": "^2.3.0"
+  }
+}
