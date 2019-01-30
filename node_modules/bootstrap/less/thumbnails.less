@@ -1,5 +1,3 @@
-// stylelint-disable selector-no-qualifying-type
-
 //
 // Thumbnails
 // --------------------------------------------------
@@ -14,13 +12,13 @@
   background-color: @thumbnail-bg;
   border: 1px solid @thumbnail-border;
   border-radius: @thumbnail-border-radius;
-  .transition(border .2s ease-in-out);
+  .transition(all .2s ease-in-out);
 
   > img,
   a > img {
     &:extend(.img-responsive);
-    margin-right: auto;
     margin-left: auto;
+    margin-right: auto;
   }
 
   // Add a hover state for linked versions only
