@@ -4,6 +4,8 @@ This [Leaflet](https://leafletjs.org) plugin provides multispectral channel mani
 
 It is available as a [node module](https://npmjs.com/package/leaflet-multispectral) as `leaflet-multispectral`.
 
+![demo.png](https://github.com/publiclab/leaflet-multispectral/blob/main/demo.png?raw=true)
+
 ## Usage
 
 See the demo for basic usage: https://publiclab.github.io/leaflet-multispectral/
