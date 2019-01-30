@@ -9,7 +9,8 @@
   <script src="node_modules/leaflet/dist/leaflet.js" type="text/javascript" charset="utf-8"></script>
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="node_modules/image-sequencer/dist/image-sequencer.min.js" type="text/javascript" charset="utf-8"></script>
-  <link rel="stylesheet" href="../node_modules/leaflet/dist/leaflet.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="node_modules/leaflet/dist/leaflet.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
   <script src="dist/leaflet.multispectral.js"></script>
 </head>
 <body style="margin:0;">
@@ -18,7 +19,7 @@
 
   <script>
 
-    var map
+    var map, tileLayer, img;
 
     (function(){
 
@@ -26,7 +27,7 @@
       map = new L.map('map').setView([29, -118.3], 12);
 
       // create a tile layer
-      var tileLayer = L.tileLayer('https://{s}.tiles.mapbox.com/v3/anishshah101.ipm9j6em/{z}/{x}/{y}.png', {
+      tileLayer = L.tileLayer('https://{s}.tiles.mapbox.com/v3/anishshah101.ipm9j6em/{z}/{x}/{y}.png', {
         maxZoom: 18,
         attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
           '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
@@ -36,24 +37,19 @@
 
 
       // create an image
-      var img = L.imageOverlay('example.jpg', [[29.0, -118.2],[29.1, -118.4]]);
+      img = L.imageOverlay('example.jpg', [[29.0, -118.2],[29.1, -118.4]]);
 
       // apply NDVI equation to the image
       img.filter('ndvi,colormap'); // run NDVI and apply colormap
 
       img.addTo(map);
 
-      // on click, change the colormap; not working
-      img.on('click', function onLoadImage() {
-
-console.log('click')
-        img.revert()
-           .filter('ndvi,colormap{colormap:brntogrn}');
-
-      });
-
-
     })();
   </script>
+
+  <div id="btns" style="position:absolute;bottom:0;width:100%;z-index:99;padding:8px;">
+    <a class="btn btn-default" href="#" onClick="img.revert().filter('ndvi,invert,colormap');">Invert</a>
+    <a class="btn btn-default" href="#" onClick="img.revert().filter('ndvi,colormap{colormap:brntogrn}');">Brown to green colormap</a>
+  </div>
       
 </html>
