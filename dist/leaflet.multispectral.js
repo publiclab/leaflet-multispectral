@@ -20,6 +20,7 @@ function LeafletMultispectral() {
       imageOverlay.revert = function revert() {
         imageOverlay._url = src;
         imageOverlay._image.src = src;
+        return imageOverlay;
       }
     }
 
