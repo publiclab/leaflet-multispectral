@@ -8,6 +8,8 @@ Also see [Leaflet.TileLayer](https://github.com/publiclab/leaflet-tile-filter), 
 
 ![demo.png](https://github.com/publiclab/leaflet-multispectral/blob/main/demo.png?raw=true)
 
+This library was made possible in part by [NASA](https://science.nasa.gov/stem-activation-team)'s [AREN project](https://www.globe.gov/web/aren-project/).
+
 ## Usage
 
 See the demo for basic usage: https://publiclab.github.io/leaflet-multispectral/
