@@ -1,5 +1,0 @@
-{
-    "name": "test",
-    "description": "Functions that are scoped inside modules are tested with this. This Module is dynamically loaded.",
-    "inputs": {}
-}
