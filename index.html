@@ -50,6 +50,7 @@
   <div id="btns" style="position:absolute;bottom:0;width:100%;z-index:99;padding:8px;">
     <a class="btn btn-default" href="#" onClick="img.revert().filter('ndvi,invert,colormap');">Invert</a>
     <a class="btn btn-default" href="#" onClick="img.revert().filter('ndvi,colormap{colormap:brntogrn}');">Brown to green colormap</a>
+    <a class="btn btn-default" href="#" onClick="img.revert().filter(prompt('Enter an Image Sequencer string; https://sequencer.publiclab.org', 'dynamic{red:R*2|green:B|blue:B/2}'));">Custom</a>
   </div>
       
 </html>
