@@ -4,7 +4,7 @@ This [Leaflet](https://leafletjs.org) plugin provides multispectral channel mani
 
 It is available as a [node module](https://npmjs.com/package/leaflet-multispectral) as `leaflet-multispectral`.
 
-Also see [Leaflet.TileLayer](https://github.com/publiclab/leaflet-tile-filter), which is a re-implementation of this library for on-the-fly TileLayer filtering.
+Also see [Leaflet.TileFilter](https://github.com/publiclab/leaflet-tile-filter), which is a re-implementation of this library for on-the-fly TileLayer filtering.
 
 ![demo.png](https://github.com/publiclab/leaflet-multispectral/blob/main/demo.png?raw=true)
 
